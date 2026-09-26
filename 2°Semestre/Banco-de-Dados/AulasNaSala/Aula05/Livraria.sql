@@ -88,3 +88,4 @@ alter table livro add column qtde_livro int;
 	constraint fk_id_livrof foreign key (id_livrof) references livros_falta (id_livrof),
 	constraint fk_id_edi foreign key (id_edi) references editores (id_edi)
 	);
+	/*teste*/

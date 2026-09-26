@@ -13,4 +13,5 @@ int main(){
 	
 	printf("A soma é: %d", soma);
 	
+	printf("%d", a1)
 }
