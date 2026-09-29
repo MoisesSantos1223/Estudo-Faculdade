@@ -61,4 +61,36 @@ ALTER TABLE GRAVACAO ADD CONSTRAINT FK_ID_MUSIC FOREIGN KEY (ID_MUSIC)REFERENCES
 
 -- Exclusão de tabelas
 drop table gravadora;
+drop table musicas cascade; -- Exluir tabelas em cascata
+
+--DML - MANIPULAÇÃO DE DADOS(INSERT, UPDATE, DELETE)
+-- INSERÇÃO DE DADOS
+
+INSERT INTO gravadora VALUES (1, 'SONY', 'sony@gmail.com'), (2,'BMG', 'bmg@gmail.com');
+
+INSERT INTO musicas VALUES (10,'A bela','00:50'), (20,'FERA','00:01:25');
+
+insert into autor values (100,'rick', 1192000320), (200,'renner', 1199999992);
+
+SELECT * FROM musicas;
+--Inserir os dados de gravadora na table musica utilizando update
+--update - atualizar dados
+
+UPDATE musicas SET ID_GRA = 2 WHERE	 id_music =10 ;
+UPDATE MUSICAS SET ID_GRA = 1 WHERE ID_MUSIC = 20;
+
+-----------------------------------------------------------------------------------
+--insert da table gravação
+
+insert into gravacao values (1010, 10, 200, '28-09-2026'), (1020,20,'26-10-2026');
+
+-- CONSULTA DADOS NA TABELA
+SELECT * FROM GRAVACAO; 
+SELECT * FROM AUTOR;
+SELECT * FROM GRAVADORA;
+
+--DELETAR DADOS
+
+DELETE FROM MUSICAS WHERE ID_MUSIC = 10; -- Não funcionou porque tem dados referenciados 	
+
 	
