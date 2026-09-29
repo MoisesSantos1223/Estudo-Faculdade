@@ -1,14 +1,40 @@
 @import url('https://googleapis.com/css2?family=Roboto:wght@300;400;500;700display=swap');
 
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Leia o siginificado a seguir*/
 }
 
 body {
+    
     font-family: 'Roboto', sans-serif;
     /* background-color: gray; */
     color: #333333;
     line-height: 1.5;
+}
+
+/* conteiner Principal   */
+.cv-conteiner {
+    
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.col-esquerda {
+    
+    flex: 1;
+}
+
+.col-direita {
+    flex: 2;
+}
+
+.card {
+    background-color: #ffffff;
+    margin-bottom: 16px;
 }
