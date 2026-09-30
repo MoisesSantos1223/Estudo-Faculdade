@@ -39,4 +39,17 @@ body {
     margin-bottom: 16px;
 }
 
-/* Fim da etapa 01*/    
+/* Fim da etapa 01*/   
+
+.site-footer {
+    background-color: #009688;
+    color: #ffffff;
+    text-align: center;
+    padding: 32px 16px;
+    margin-top: 16px;
+}
+
+.site-footer p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
