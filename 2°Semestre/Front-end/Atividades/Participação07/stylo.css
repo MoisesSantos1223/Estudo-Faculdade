@@ -53,3 +53,37 @@ body {
     font-size: 16px;
     margin-bottom: 16px;
 }
+
+.social-icons {
+    margin-bottom: 16px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 4px;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.3 ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.6;
+}
+
+.site-footer .credits {
+    font-size: 14px;
+}
+
+.site-footer .credits a {
+    color: #ffffff;text-decoration: underline;
+    transition: color 0.3s ease;
+
+}
+
+.site-footer .credits a:hover {
+    color: #ccc;
+}
+
+/*Conclução da parte 02 */
