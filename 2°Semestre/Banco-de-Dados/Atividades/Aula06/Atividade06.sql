@@ -46,6 +46,6 @@ aprovado_teste	BOOLEAN
 	/*Adicionando primary key */
 	ALTER TABLE aulabd ADD CONSTRAINT pk_rgm PRIMARY KEY (rgm_aulabd);
 
-	/*Apagar a tabela*/
+	/*Apagar a tabelas*/
 	DROP TABLE aulabd;
 	
