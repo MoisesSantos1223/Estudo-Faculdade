@@ -161,3 +161,61 @@ CSS não tem comandos como uma linguagem de programação; usa **propriedades** 
 - URLs funcionais para os perfis sociais; ainda faltam os links fornecidos pelo usuário.
 
 O projeto foi combinado para ficar abaixo de 300 linhas somando HTML e CSS. Consulte o `README.md` principal e `README-IA.md` para o estado geral e os requisitos escolares.
+
+## Guia de leitura do HTML da pasta `Atividade 1`
+
+Esta parte explica os elementos e atributos HTML usados nas páginas de `Atividade 1`. Os nomes entre sinais de menor e maior são **elementos** ou **tags** — não funções. O HTML organiza o conteúdo; o CSS define sua aparência.
+
+### Estrutura do documento
+
+`<!DOCTYPE html>` informa ao navegador que o arquivo usa HTML moderno. `<html lang="pt-br">` envolve a página; `lang` informa que o idioma é português do Brasil.
+
+`<head>` guarda informações sobre a página. `<meta charset="UTF-8">` permite exibir acentos corretamente; `<meta name="viewport">` ajuda o layout a caber na tela do dispositivo; e `<meta name="description">` descreve a página. `<title>` define o texto da aba do navegador. `<link rel="stylesheet" href="style.css">` conecta a página ao arquivo CSS.
+
+`<body>` contém o conteúdo visível da página.
+
+### Elementos de organização e conteúdo
+
+`<header>` representa o cabeçalho da página ou de uma seção. `<nav>` agrupa os links de navegação. `<main>` identifica o conteúdo principal. `<section>` divide a página por assunto. `<article>` agrupa conteúdo independente, como um cartão de projeto ou habilidade. `<aside>` contém informações complementares, como a identificação no currículo. `<footer>` representa o rodapé.
+
+`<div>` agrupa elementos para organizar o layout e aplicar estilos, sem acrescentar significado próprio. `<span>` agrupa um trecho pequeno de conteúdo dentro de outro elemento, também sem significado próprio.
+
+`<h1>`, `<h2>` e `<h3>` criam títulos em níveis diferentes: o título principal e os títulos das seções ou cartões. `<p>` cria parágrafos. `<strong>` marca texto importante. `<br>` força uma quebra de linha. `<code>` identifica trechos que representam código.
+
+### Listas
+
+`<ul>` cria uma lista sem ordem numerada; `<ol>` cria uma lista ordenada; `<li>` representa cada item de uma lista.
+
+### Links, imagens e ícones
+
+`<a>` cria um link. O atributo `href` contém o destino: pode ser outra página, uma seção da página como `#contato` ou um endereço externo.
+
+Nos links externos, `target="_blank"` pede que o navegador abra o destino em outra aba. `rel="noopener noreferrer"` acompanha essa opção para impedir que a página aberta controle a página original.
+
+`<img>` exibe uma imagem. `src` indica o caminho do arquivo; `alt` fornece uma descrição para leitores de tela ou quando a imagem não carrega.
+
+`<svg>` permite desenhar um ícone vetorial diretamente no HTML. `viewBox` define a área do desenho. `<path>` desenha uma forma; o atributo `d` contém as instruções do traçado. `role="img"` informa que o SVG é uma imagem, e `aria-label` dá a ela um nome acessível, como “GitHub” ou “LinkedIn”.
+
+### Classes, identificadores e barras de habilidades
+
+`class` dá um nome que pode ser usado pelo CSS para aplicar estilos. Uma classe pode ser reutilizada em vários elementos. `id` identifica um elemento específico e pode ser usado como destino de um link interno.
+
+As barras de habilidades usam `<p>` como base e `<span>` como parte preenchida. Classes, como `skill-bar` e `progress-python`, conectam os elementos às regras de estilo no CSS.
+
+`role="progressbar"` informa a tecnologias assistivas que o elemento representa um nível de progresso. `aria-label` nomeia a habilidade; `aria-valuemin`, `aria-valuemax` e `aria-valuenow` informam o valor mínimo, o máximo e o valor atual.
+
+### Formulário de contato
+
+`<form>` agrupa os campos do formulário. `action="#"` não envia os dados para um serviço; `method="get"` define o método que o navegador usaria para enviar dados. Neste projeto o formulário é demonstrativo: não salva nem encaminha mensagens.
+
+`<label>` mostra o nome de um campo. Seu atributo `for` deve ter o mesmo valor que o `id` do campo relacionado. `<input>` cria campos curtos, como nome e e-mail. `<textarea>` cria uma área maior para a mensagem. `<button>` cria o botão de envio.
+
+`name` identifica um campo; `type="email"` indica um campo de e-mail; `type="submit"` define um botão de envio; `placeholder` mostra uma dica dentro de um campo; `required` exige que o campo seja preenchido; e `rows` define a altura inicial da área de texto.
+
+### Comentários HTML
+
+`<!-- comentário -->` adiciona uma anotação para quem lê o código. O navegador não mostra o conteúdo do comentário na página.
+
+### Lista completa dos elementos usados
+
+Nas páginas de `Atividade 1` aparecem: `<html>`, `<head>`, `<meta>`, `<title>`, `<link>`, `<body>`, `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<div>`, `<span>`, `<a>`, `<img>`, `<ul>`, `<ol>`, `<li>`, `<h1>`, `<h2>`, `<h3>`, `<p>`, `<strong>`, `<br>`, `<code>`, `<svg>`, `<path>`, `<form>`, `<label>`, `<input>`, `<textarea>` e `<button>`.
