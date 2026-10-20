@@ -39,35 +39,36 @@ O README com os requisitos pede HTML e CSS, pelo menos quatro páginas, estrutur
 
 **Observação:** a navegação usa links HTML comuns; não há script controlando o menu.
 
-## 3. Cartões de habilidades e barras ilustrativas
+## 3. Cartões de habilidades e barras de progresso
 
-**O que é:** cartões exibem HTML, CSS e Front-end, com barras coloridas para dar uma representação visual simples do aprendizado.
-
-**Onde está:**
-
-| Arquivo e linhas | Código | O que faz |
-|---|---|---|
-| `index.html`, linhas 38–45 | Seção de habilidades e cartões | Agrupa os conhecimentos em cartões independentes. |
-| `index.html`, linhas 41–43 | Classes `skill-bar`, `progress-html`, `progress-css`, `progress-front` | Ligam cada barra à regra CSS correspondente. |
-| `style.css`, linha 47 | `.skill-bar` | Cria a base escura da barra e esconde o que passar de seus limites (`overflow: hidden`). |
-| `style.css`, linha 48 | `.skill-bar span` | Desenha o trecho rosa dentro da base. |
-| `style.css`, linhas 49–51 | `width` das barras | Define larguras ilustrativas para HTML, CSS e Front-end. |
-
-**Importante:** essas larguras são apenas parte do desenho e não foram medidas como níveis reais de domínio. Se não quiser representar porcentagens, troque por texto como “Em aprendizado” ou remova as barras.
-
-## 4. Cartões e página separada de projetos
-
-**O que é:** além das páginas exigidas, o portfólio apresenta cartões de projetos e tem uma página própria para listá-los.
+**O que é:** cartões mostram Python, Banco de dados (MySQL), Java, Linguagem C, Inteligência Artificial, HTML e CSS. Os níveis informados pelo aluno definem visualmente o preenchimento das barras; os números não aparecem nos nomes das habilidades.
 
 **Onde está:**
 
 | Arquivo e linhas | Código | O que faz |
 |---|---|---|
-| `index.html`, linhas 46–53 | Seção `id="projetos"` | Apresenta uma prévia de projetos na página inicial. |
-| `index.html`, linhas 49–51 | Cartões de portfólio, blog e próximo projeto | Dão exemplos de conteúdos que podem aparecer no portfólio. |
-| `projetos.html`, linhas 8–12 | Cartões na página de projetos | Separa o projeto escolar, o espaço para um projeto futuro e os exercícios. |
+| `index.html`, linhas 81–124 | Seção de habilidades e cartões | Agrupa os sete conhecimentos em cartões, com seus percentuais e descrições. |
+| `index.html`, linhas 91–121 | `role="progressbar"` e atributos `aria-*` | Expõem o nome e o nível visual aproximado de cada barra para tecnologias assistivas. |
+| `style.css`, linhas 47–48 | `.skill-bar` e `.skill-bar span` | Desenham a base escura e o trecho rosa de cada barra. |
+| `style.css`, linhas 49–54 | Classes `progress-python`, `progress-mysql`, `progress-java`, `progress-c`, `progress-ia`, `progress-html` e `progress-css` | Definem o preenchimento visual das barras com base nos níveis informados. |
+| `curriculo.html`, linhas 67–79 | Lista de habilidades | Repete os mesmos conhecimentos e percentuais no currículo. |
+
+**Importante:** os níveis servem apenas para indicar visualmente quanto cada barra fica preenchida. Não são exibidos como números nem representam resultados de uma avaliação formal.
+
+## 4. Cartão de projeto com link direto ao GitHub
+
+**O que é:** a página inicial apresenta cartões com uma descrição resumida e um link direto para repositórios do GitHub, abertos em uma nova aba. Os cartões mostram o Gerenciador de Estoque, este portfólio feito com HTML e CSS, o repositório de estudos Exercícios de Python e uma página sobre os estudos de front-end.
+
+**Onde está:**
+
+| Arquivo e linhas | Código | O que faz |
+|---|---|---|
+| `index.html`, seção `id="projetos"` | Cartões de projetos | Apresenta os trabalhos na página inicial. |
+| `index.html`, cartão “Gerenciador de Estoque” | Descrição e link externo do GitHub | Resume cadastro, listagem e remoção de produtos e abre diretamente o repositório. |
+| `index.html`, cartão “Meu Portfólio” | Descrição e link para a pasta do site no GitHub | Apresenta este site como projeto em HTML e CSS e abre seus arquivos no repositório. |
+| `index.html`, cartão “Exercícios de Python” | Descrição de estudos e link externo do GitHub | Resume o objetivo do repositório de estudos e abre diretamente sua página no GitHub. |
+| `index.html`, cartão “Estudos de front-end” | Link interno para `estudos.html` | Abre a página que explica os conceitos de HTML e CSS usados no portfólio. |
 | `style.css`, linhas 42–46 | `.cards`, `.card`, `:hover` | Organizam os cartões e mudam sua borda ao passar o mouse. |
-| `style.css`, linha 75 | `.project-page-grid .card` | Mantém uma altura mínima para os cartões de projetos. |
 
 ## 5. Linha do tempo da formação
 
@@ -81,35 +82,31 @@ O README com os requisitos pede HTML e CSS, pelo menos quatro páginas, estrutur
 | `style.css`, linhas 55–56 | `.timeline` e `.timeline li` | Alinham os itens e desenham a linha vertical ao lado deles. |
 | `curriculo.html`, linhas 10–13 | Cartões de formação, habilidades e próximos passos | Organizam as informações do currículo por assunto. |
 
-## 6. Ícones de redes sociais feitos em SVG
+## 6. Links e ícones de redes sociais feitos em SVG
 
-**O que é:** os desenhos simplificados do GitHub, LinkedIn e Instagram estão escritos diretamente no HTML com SVG. Não é preciso instalar uma biblioteca ou usar imagens externas para esses ícones.
-
-**Onde está:**
-
-| Arquivo e linhas | Código | O que faz |
-|---|---|---|
-| `index.html`, linha 26 | Lista `social-links` | Agrupa os três perfis e informa às tecnologias assistivas que são redes sociais. |
-| `index.html`, linha 27 | SVG do GitHub | Desenha o símbolo do GitHub com um caminho `<path>`. |
-| `index.html`, linha 28 | SVG do LinkedIn | Desenha o símbolo do LinkedIn com um caminho `<path>`. |
-| `index.html`, linha 29 | SVG do Instagram | Desenha o contorno com `<rect>` e `<circle>`. |
-| `style.css`, linhas 30–34 | `.social`, `.social svg` e `.social .instagram` | Controlam o alinhamento, tamanho, preenchimento e contorno dos ícones. |
-
-**Estado atual:** os itens são `<span>`, não links. O texto “adicionar link” indica que faltam as URLs reais do usuário. Depois que ele fornecer os perfis, substitua cada `<span>` externo por um `<a href="URL">` com um rótulo acessível.
-
-## 7. Imagem provisória
-
-**O que é:** o mesmo arquivo SVG mostra um círculo com “IMG” e “adicionar foto” até o usuário escolher uma imagem real.
+**O que é:** os desenhos simplificados do GitHub e LinkedIn estão escritos diretamente no HTML com SVG. Cada ícone é um link para o perfil informado pelo aluno e abre em uma nova aba.
 
 **Onde está:**
 
 | Arquivo e linhas | Código | O que faz |
 |---|---|---|
-| `index.html`, linha 32 | `<img class="profile" src="imagens/placeholder.svg">` | Mostra a imagem provisória no destaque inicial; `alt` descreve que ela deve ser trocada por uma foto. |
-| `curriculo.html`, linha 9 | `<img class="profile resume-photo" ...>` | Reutiliza o mesmo espaço provisório no currículo. |
-| `blog.html`, linha 10 | `<img class="article-image-placeholder" ...>` | Usa o SVG como espaço para uma futura imagem do artigo. |
-| `imagens/placeholder.svg`, linha 1 | Formas e textos SVG | Desenha o círculo, o contorno rosa e os textos de orientação. |
-| `style.css`, linhas 34 e 69 | `.profile` e `.resume-photo` | Dão forma redonda e tamanho apropriado às imagens. |
+| `index.html`, lista `social-links` | Links com SVG do GitHub e LinkedIn | Agrupa os perfis clicáveis; cada desenho usa SVG embutido no HTML. |
+| `style.css`, regras `.social` e `.social svg` | Estilos dos links e dos ícones | Controlam alinhamento, tamanho e aparência dos ícones. |
+
+**Estado atual:** os links do GitHub e do LinkedIn estão configurados com as URLs informadas pelo aluno. O Instagram foi removido a pedido do aluno.
+
+## 7. Foto de perfil
+
+**O que é:** a foto escolhida pelo aluno aparece no destaque da página inicial e na identificação do currículo. O arquivo SVG provisório permanece na pasta, mas não é usado nesses dois locais.
+
+**Onde está:**
+
+| Arquivo e linhas | Código | O que faz |
+|---|---|---|
+| `index.html`, elemento `img.profile` | `src="imagens/moises.jpeg"` | Mostra a foto na apresentação e fornece um texto alternativo descritivo. |
+| `curriculo.html`, elemento `img.profile.resume-photo` | `src="imagens/moises.jpeg"` | Reutiliza a mesma foto na identificação do currículo. |
+| `imagens/moises.jpeg` | Foto JPEG enviada pelo aluno | Arquivo da foto de perfil, renomeado conforme solicitado. |
+| `style.css`, regras `.profile` e `.resume-photo` | Estilos das fotos | Ajustam o tamanho e o enquadramento da imagem em cada página. |
 
 ## 8. Adaptação para celular
 
