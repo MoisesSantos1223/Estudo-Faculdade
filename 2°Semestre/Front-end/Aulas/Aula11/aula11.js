@@ -26,3 +26,12 @@ function teste() {
     document.getElementById('titulo').style.color = "red"
     document.getElementById('titulo').style.backgroundColor = "blue"
  }
+
+ function calcularidade(){
+    nome = document.getElementById('nome').value
+    anoNasc = parseInt(document.getElementById('anoNasc').value)
+
+    idade = 2026 - anoNasc
+
+    document.getElementById('resp').innerHTML = idade
+ }
