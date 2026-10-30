@@ -24,7 +24,7 @@ void salvarProdutos(struct produto produtos[], int quantidade);
 void carregarProdutos(struct produto **produtos, int *quantidade);
 
 int main(void) {
-    struct produto *produtos = NULL;
+    struct produto *produtos = NULL; //Eu tenho que tirar uma duvida com chatgpt 
     int quantidade = 0;
     int opcao;
 
