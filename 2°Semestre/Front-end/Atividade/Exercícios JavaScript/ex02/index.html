@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 02</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Exercício 02</h1>
+
+    <button onclick="comeca()">Começar</button>
+    <br>
+    <h1>Notas</h1>
+    <br>
+    <table id="tabela" border="1" hidden>
+        <tr>
+            <th>Nome</th>
+            <th>Nota1</th>
+            <th>Nota2</th>
+        </tr>
+        <tr>
+            <th id="nome">.</th>
+            <th id="nota1">.</th>
+            <th id="nota2">.</th>
+        </tr>
+    </table>
+    <br>
+    <button onclick="total()" hidden>Calcular media</button>
+    <p id="media"></p>
+</body>
+</html>
