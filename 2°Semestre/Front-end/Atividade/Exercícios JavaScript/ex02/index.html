@@ -8,26 +8,25 @@
 </head>
 <body>
     <h1>Exercício 02</h1>
-
-    <button onclick="comeca()">Começar</button>
-    <br>
-    <h1>Notas</h1>
-    <br>
-    <table id="tabela" border="1" hidden>
-        <tr>
-            <th>Nome</th>
-            <th>Nota1</th>
-            <th>Nota2</th>
-        </tr>
-        <tr>
-            <th id="nome">.</th>
-            <th id="nota1">.</th>
-            <th id="nota2">.</th>
-        </tr>
-    </table>
-    <br>
-    <button onclick="total()" hidden>Calcular media</button>
-    <p id="media"></p>
+    <button onclick="comeca()">comeca</button>
+    <div id="comeca" hidden>
+        <h1>Notas</h1>
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+            <tr>
+                <th id="nome"></th>
+                <th id="nota1"></th>
+                <th id="nota2"></th>
+            </tr>
+        </table>
+        <br>
+        <button onclick="total()">Calcular média</button> <!--Eu criei outra função para colcoar o valor da media -->
+        <p id="media"></p>
+    </div>
 </body>
 </html>
 <!--Tenho que arrumar o erro do buttum, ent essa atividade está imcompleto-->
