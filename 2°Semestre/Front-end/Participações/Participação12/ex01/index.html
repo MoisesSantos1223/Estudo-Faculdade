@@ -1,1 +1,44 @@
-<!--Participação 12, data de entrega 6/11-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participação 12</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Ex 01</h1>
+    <br>
+    <h1>Tabelas de juros</h1>
+    <table border="1">
+        <tr>
+            <th bgcolor="blue">Parcelas</th> <th>% de Jurus</th>
+        </tr>
+        <tr>
+            <th bgcolor="blue">1</th> <th>0</th>
+        </tr>
+        <tr>
+            <th bgcolor="blue">2</th> <th>3</th>
+        </tr>
+        <tr>
+            <th bgcolor="blue">4</th> <th>7</th>
+        </tr>
+    </table>
+    <br>
+    <label>Valor total do produto: </label>
+    <input type="number" id="valor">
+    <br>
+    <label for="">Quantidade de Parcelas:</label>
+    <input type="number" id="parcelas">
+
+    <h2>aperte no botão para  descobrir o juros</h2>
+
+    <button onclick="media()">Click</button>
+    <br>
+    
+    <!--A tag <span> serve para separar uma pequena parte do conteúdo HTML-->
+    <p>Valor total com juros: <span id="valorTotal"></span></p>
+
+    <p>Valor de cada parcelas: <span id="valorParcelas"></span></p>
+</body>
+</html>
