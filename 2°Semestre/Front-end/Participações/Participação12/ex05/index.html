@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participação 12</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Codições de pagamento</h1>
+    <br>
+
+    <h2>Digite o valor do seu produto </h2>
+
+    <label>Digite o preço do produto: </label>
+    <input type="number" id="preco">
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <th bgcolor="blue">Código</th> <th bgcolor="blue">Codições de pagamento</th>
+        </tr>
+        <tr>
+            <th bgcolor="blue">1</th> <th>à vista 10% de desconto</th>
+        </tr>
+
+        <tr>
+            <th bgcolor="blue">2</th> <th>Cartão 5% de desconto</th>
+        </tr>
+        <tr>
+            <th bgcolor="blue">3</th> <th>Parcelado 10% de desconto</th>
+        </tr>
+    </table>
+
+    <br>
+    <h3>Escolha a opção da tabela e click em calcular</h3>
+    <label for="">Código: </label>
+    <input type="number" id="codigo">
+
+    <button onclick="total()">click</button>
+
+    <p>O valor é: <span id="resultado"></span></p>
+</body>
+</html>
